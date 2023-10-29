@@ -9,6 +9,7 @@
     border: 2px solid blue;
     padding: 10px 20px;
     margin: 100px auto;
+    background-color: rgb(208, 64, 189);
 }
 button {
     background-color: yellow;
@@ -24,7 +25,7 @@ input {
 :hover {
 
     transition: 0.3s;
-    background-color: rgb(19, 74, 19);
+    background-color: rgb(67, 216, 67);
 }
 button:hover {
     background-color: rgb(19, 74, 19);
