@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.continier {
+    max-width: 800px;
+    height: auto;
+    border: 2px solid blue;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+button {
+    background-color: yellow;
+    color: aqua;
+    padding: 5px;
+
+}
+input {
+    background-color: rgb(144, 223, 144);
+    color:black;
+
+}
+:hover {
+
+    transition: 0.3s;
+    background-color: rgb(19, 74, 19);
+}
+button:hover {
+    background-color: rgb(19, 74, 19);
+    transform: translate(1.1px,1.1px) ;
+}
+input:hover {
+    background-color: rgb(81, 163, 230);
+    transform: translate(1.1px,1.1px) ;
+}
+.continier:hover {
+       background-color: blue;
+}

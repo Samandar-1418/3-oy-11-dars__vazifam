@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Vazifa</title>
+</head>
+<body>
+   <div class="continier">
+    <table id="savedItems">
+        <tr>
+            <th>Saqlangan ma'lumotlar:</th>
+        </tr>
+    </table>
+    <p id="TextSaved"></p>
+    <p id="InTextOpen"></p>
+    <input type="text" id="input"/>
+    <button onclick="save()">Save</button>
+   </div>
+    <script>
+        function save(){
+            let Item = document.getElementById("input").value;
+
+            // Jadvalga yangi qator qo'shish
+            let table = document.getElementById("savedItems");
+            let row = table.insertRow(-1);
+            let cell = row.insertCell(0);
+            cell.innerHTML = Item;
+
+            // Ma'lumotni local storage ga saqlash
+            localStorage.setItem("storeItem", Item);
+
+            // Chop etishdan keyin input qiymatini bo'satish
+            document.getElementById("input").value = "";
+        }
+
+        function get(){
+            let storedItem = localStorage.getItem("storeItem");
+            document.getElementById("InTextOpen").innerHTML = storedItem + " OCHILDI";
+        }
+    </script>
+</body>
+</html>
